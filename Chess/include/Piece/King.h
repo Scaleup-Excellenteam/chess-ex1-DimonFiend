@@ -2,12 +2,12 @@
 #include "Piece.h"
 
 struct indexPair;
-class Rook : public Piece
+class King : public Piece
 {
 public:
-	Rook(bool isWhite) : Piece(isWhite) {};
+	King(bool isWhite) : Piece(isWhite) {};
 	virtual bool checkMoveRange(const indexPair& source, const indexPair& destination) const override;
-	
+
 private:
 	static bool registerIt;
 };
