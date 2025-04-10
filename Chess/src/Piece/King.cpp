@@ -7,27 +7,29 @@ bool King::registerIt = PieceFactory::registerPiece("K", [](bool isWhite) -> std
 // Rooks moves in straight lines, either horizontally or vertically.
 bool King::checkMoveRange(const indexPair& source, const indexPair& destination) const
 {
-	if(source.row == destination.row && source.col == destination.col)
-		return false;
+	if(source.row + 1 == destination.row && source.col == destination.col)
+		return true;
 
-	if (source.row == destination.row && source.col == destination.col)
-		return false;
+	if (source.row -1 == destination.row && source.col == destination.col)
+		return true;
 
-	if (source.row == destination.row && source.col == destination.col)
-		return false;
+	if (source.row == destination.row && source.col - 1 == destination.col)
+		return true;
 
-	if (source.row == destination.row && source.col == destination.col)
-		return false;
+	if (source.row == destination.row && source.col + 1 == destination.col)
+		return true;
 
-	if (source.row == destination.row && source.col == destination.col)
-		return false;
+	if (source.row - 1 == destination.row && source.col - 1 == destination.col)
+		return true;
 
-	if (source.row == destination.row && source.col == destination.col)
-		return false;
+	if (source.row - 1 == destination.row && source.col + 1 == destination.col)
+		return true;
 
-	if (source.row == destination.row && source.col == destination.col)
-		return false;
+	if (source.row + 1 == destination.row && source.col - 1 == destination.col)
+		return true;
 
-	if (source.row == destination.row && source.col == destination.col)
-		return false;
+	if (source.row + 1 == destination.row && source.col + 1 == destination.col)
+		return true;
+
+	return false;
 }

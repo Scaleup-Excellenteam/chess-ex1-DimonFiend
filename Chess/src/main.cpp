@@ -4,8 +4,8 @@
 
 int main()
 {
-	//string board = "RNBQKBNRPPPPPPPP################################pppppppprnbqkbnr"; 
-	string board = "##########R###############################R#############r#r#####";
+	string board = "RNBQKBNRPPPPPPPP################################pppppppprnbqkbnr"; 
+	//string board = "#####K####R###############################R#############r#r#k###";
 	Chess a(board);
 	int codeResponse = 0;
 	string res = a.getInput();
@@ -29,7 +29,7 @@ int main()
 
 		/**/ 
 		{ // put your code here instead that code
-			codeResponse = b.checkAction(res);
+			codeResponse = b.validateAndPerformAction(res);
 		}
 		/**/
 

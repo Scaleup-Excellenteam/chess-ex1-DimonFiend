@@ -2,6 +2,6 @@
 
 struct indexPair
 {
-	int row;
-	int col;
+	int row = -1;
+	int col = -1;
 };

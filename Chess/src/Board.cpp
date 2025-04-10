@@ -24,48 +24,66 @@ Board::Board(const std::string& players)
 		{
 			const char pieceChar = players[row * BOARD_SIZE + col];
 			m_Board[row][col] = std::move(PieceFactory::createPiece(std::string(1,pieceChar)));
+			initializeKing(row, col);
 		}
 	}
 }
 
-int Board::checkAction(const std::string& action)
+// If this slot is not null and is a king, store its pointer and position.
+void Board::initializeKing(int row, int col)
 {
-	indexPair sourceIndex = { Utility::charToIntBoard(action[0]), Utility::stringToInt(action[1])};
-	indexPair destIndex = { Utility::charToIntBoard(action[2]), Utility::stringToInt(action[3])};
-	boardDebug();
-	if (sourceIndex.row >= 0 && sourceIndex.col >= 0)
+	Piece* piece = m_Board[row][col].get();
+	if (piece && piece->isKing())
 	{
-		auto piece = getPiece(sourceIndex.row, sourceIndex.col);
-
-		if (!piece)
+		if (piece->isWhite())
 		{
-			return (int)CodeType::CT_NO_PAWN;
-		}
-
-		if (piece && (piece->isWhite() != m_isWhiteTurn))
-		{
-			return (int)CodeType::CT_ENEMY_PAWN;
-		}
-
-		bool validMove = piece->checkMoveRange(sourceIndex, destIndex);
-		if(validMove)
-		{
-			m_isWhiteTurn = !m_isWhiteTurn;
-			movePiece(sourceIndex, destIndex);
-			return (int)CodeType::CT_LEGAL_MOVE;
+			m_whiteKing = piece;
+			m_whiteKingPos = { row, col };
 		}
 		else
 		{
-			return (int)CodeType::CT_ILLEGAL_MOVE;
+			m_blackKing = piece;
+			m_blackKingPos = { row, col };
 		}
 	}
-
-	return (int)CodeType::CT_ILLEGAL_MOVE;
 }
 
-Piece* Board::getPiece(int row, int col) const
+int Board::validateAndPerformAction(const std::string& action)
 {
-	return m_Board[row][col].get();
+	MoveIndices move = parseAction(action);
+	boardDebug(); // For debugging purposes
+
+	Piece* piece = getPiece(move.source);
+	if (!piece)
+		return (int)CodeType::CT_NO_PAWN;
+	if (piece->isWhite() != m_isWhiteTurn)
+		return (int)CodeType::CT_ENEMY_PAWN;
+	if (!piece->checkMoveRange(move.source, move.destination))
+		return (int)CodeType::CT_ILLEGAL_MOVE;
+
+	Piece* destPiece = getPiece(move.destination);
+	if (destPiece && piece->isWhite() == destPiece->isWhite())
+		return (int)CodeType::CT_ALLY_PAWN;
+
+	std::unique_ptr<Piece> capturedPiece = simulateMove(move.source, move.destination);
+
+	if (isKingInCheck(piece->isWhite()))
+	{
+		undoMove(move.source, move.destination, capturedPiece);
+		return (int)CodeType::CT_CHECK_OWN;
+	}
+
+	m_isWhiteTurn = !m_isWhiteTurn;
+
+	if (isKingInCheck(m_isWhiteTurn))
+		return (int)CodeType::CT_LEGAL_CHECK_MOVE;
+	else
+		return (int)CodeType::CT_LEGAL_MOVE;
+}
+
+Piece* Board::getPiece(indexPair index) const
+{
+	return m_Board[index.row][index.col].get();
 }
 
 void Board::boardDebug()const
@@ -83,4 +101,53 @@ void Board::movePiece(indexPair source, indexPair destination)
 {
 	m_Board[destination.row][destination.col] = std::move(m_Board[source.row][source.col]);
 	m_Board[source.row][source.col] = nullptr;
+}
+
+indexPair Board::findKingPosition(bool isWhite) const
+{
+	return isWhite ? m_whiteKingPos : m_blackKingPos;
+}
+
+/// Returns true if the king of the given color is under attack.
+bool Board::isKingInCheck(bool isWhite) const
+{
+	indexPair kingPos = findKingPosition(isWhite);
+
+	for (int row = 0; row < BOARD_SIZE; ++row)
+	{
+		for (int col = 0; col < BOARD_SIZE; ++col)
+		{
+			Piece* enemy = m_Board[row][col].get();
+			if (enemy && enemy->isWhite() != isWhite)
+			{
+				indexPair pos = { row, col };
+				if (enemy->checkMoveRange(pos, kingPos))
+					return true;
+			}
+		}
+	}
+	return false;
+}
+
+std::unique_ptr<Piece> Board::simulateMove(indexPair source, indexPair destination)
+{
+	std::unique_ptr<Piece> captured = std::move(m_Board[destination.row][destination.col]);
+	m_Board[destination.row][destination.col] = std::move(m_Board[source.row][source.col]);
+	m_Board[source.row][source.col] = nullptr;
+	return captured;
+}
+
+void Board::undoMove(indexPair source, indexPair destination, std::unique_ptr<Piece>& capturedPiece)
+{
+	m_Board[source.row][source.col] = std::move(m_Board[destination.row][destination.col]);
+	m_Board[destination.row][destination.col] = std::move(capturedPiece);
+}
+
+
+/// Parses a 4-character action string into source and destination indices.
+MoveIndices Board::parseAction(const std::string& action) const
+{
+	MoveIndices mi = { indexPair{ Utility::charToIntBoard(action[0]), Utility::stringToInt(action[1])} ,
+		indexPair{ Utility::charToIntBoard(action[2]), Utility::stringToInt(action[3]) }};
+	return mi;
 }
