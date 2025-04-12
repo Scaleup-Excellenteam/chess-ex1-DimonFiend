@@ -3,40 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\King.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\src\\Piece\\King.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Bishop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\src\\Piece\\Bishop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\src\\Piece\\Rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\include\\Piece\\King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\Rook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\include\\Piece\\Rook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\src\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\include\\Piece\\Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\include\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\indexStruct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\include\\indexStruct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\src\\Piece\\Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\indexStruct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\include\\indexStruct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -44,10 +36,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\AppData\\Local\\Temp\\90f2f473-53dd-4f1f-818c-b8870c9a8705_oop2_project-Dima_Nikonov (1).zip.705\\oop2_project-Dima_Nikonov\\src\\HeroesFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Utility.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chess\\include\\Utility.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -85,72 +73,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bishop.cpp",
+              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Bishop.cpp",
+              "RelativeDocumentMoniker": "Chess\\src\\Piece\\Bishop.cpp",
+              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Bishop.cpp",
+              "RelativeToolTip": "Chess\\src\\Piece\\Bishop.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-12T17:56:16.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Rook.cpp",
               "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Rook.cpp",
               "RelativeDocumentMoniker": "Chess\\src\\Piece\\Rook.cpp",
               "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Rook.cpp",
               "RelativeToolTip": "Chess\\src\\Piece\\Rook.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T08:55:25.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "King.cpp",
-              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\King.cpp",
-              "RelativeDocumentMoniker": "Chess\\src\\Piece\\King.cpp",
-              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\King.cpp",
-              "RelativeToolTip": "Chess\\src\\Piece\\King.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T08:55:20.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rook.h",
-              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\Rook.h",
-              "RelativeDocumentMoniker": "Chess\\include\\Piece\\Rook.h",
-              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\Rook.h",
-              "RelativeToolTip": "Chess\\include\\Piece\\Rook.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T08:54:52.393Z",
+              "WhenOpened": "2025-04-12T17:56:11.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "King.h",
-              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\King.h",
-              "RelativeDocumentMoniker": "Chess\\include\\Piece\\King.h",
-              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\King.h",
-              "RelativeToolTip": "Chess\\include\\Piece\\King.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
+              "Title": "Board.cpp",
+              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Board.cpp",
+              "RelativeDocumentMoniker": "Chess\\src\\Board.cpp",
+              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Board.cpp",
+              "RelativeToolTip": "Chess\\src\\Board.cpp",
+              "ViewState": "AQIAAGYAAAAAAAAAAADwv58AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-12T17:22:39.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Board.h",
+              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Board.h",
+              "RelativeDocumentMoniker": "Chess\\include\\Board.h",
+              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Board.h",
+              "RelativeToolTip": "Chess\\include\\Board.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T08:54:42.496Z",
+              "WhenOpened": "2025-04-12T17:21:34.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Piece.h",
-              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\Piece.h",
-              "RelativeDocumentMoniker": "Chess\\include\\Piece\\Piece.h",
-              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Piece\\Piece.h",
-              "RelativeToolTip": "Chess\\include\\Piece\\Piece.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T08:26:33.131Z",
+              "Title": "Pawn.cpp",
+              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Pawn.cpp",
+              "RelativeDocumentMoniker": "Chess\\src\\Piece\\Pawn.cpp",
+              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Piece\\Pawn.cpp",
+              "RelativeToolTip": "Chess\\src\\Piece\\Pawn.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-12T17:21:25.649Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "indexStruct.h",
               "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\indexStruct.h",
               "RelativeDocumentMoniker": "Chess\\include\\indexStruct.h",
@@ -158,12 +146,11 @@
               "RelativeToolTip": "Chess\\include\\indexStruct.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T08:24:04.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T08:24:04.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "CMakeLists.txt",
               "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\CMakeLists.txt",
               "RelativeDocumentMoniker": "Chess\\src\\CMakeLists.txt",
@@ -171,12 +158,11 @@
               "RelativeToolTip": "Chess\\src\\CMakeLists.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-04-08T20:50:47.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:50:47.112Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "HeroesFactory.cpp",
               "DocumentMoniker": "C:\\Users\\dimon\\AppData\\Local\\Temp\\90f2f473-53dd-4f1f-818c-b8870c9a8705_oop2_project-Dima_Nikonov (1).zip.705\\oop2_project-Dima_Nikonov\\src\\HeroesFactory.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\90f2f473-53dd-4f1f-818c-b8870c9a8705_oop2_project-Dima_Nikonov (1).zip.705\\oop2_project-Dima_Nikonov\\src\\HeroesFactory.cpp",
@@ -189,53 +175,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\main.cpp",
               "RelativeDocumentMoniker": "Chess\\src\\main.cpp",
               "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\main.cpp",
               "RelativeToolTip": "Chess\\src\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-08T18:30:01.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Utility.h",
-              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Utility.h",
-              "RelativeDocumentMoniker": "Chess\\include\\Utility.h",
-              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Utility.h",
-              "RelativeToolTip": "Chess\\include\\Utility.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-08T18:28:07.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Board.h",
-              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Board.h",
-              "RelativeDocumentMoniker": "Chess\\include\\Board.h",
-              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\include\\Board.h",
-              "RelativeToolTip": "Chess\\include\\Board.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-08T17:54:27.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Board.cpp",
-              "DocumentMoniker": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Board.cpp",
-              "RelativeDocumentMoniker": "Chess\\src\\Board.cpp",
-              "ToolTip": "C:\\Users\\dimon\\source\\repos\\chess-ex1-DimonFiend\\Chess\\src\\Board.cpp",
-              "RelativeToolTip": "Chess\\src\\Board.cpp",
-              "ViewState": "AQIAACEAAAAAAAAAAAAcwDwAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-08T17:46:28.078Z",
               "EditorCaption": ""
             }
           ]

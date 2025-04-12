@@ -51,14 +51,13 @@ void Board::initializeKing(int row, int col)
 int Board::validateAndPerformAction(const std::string& action)
 {
 	MoveIndices move = parseAction(action);
-	boardDebug(); // For debugging purposes
 
 	Piece* piece = getPiece(move.source);
 	if (!piece)
 		return (int)CodeType::CT_NO_PAWN;
 	if (piece->isWhite() != m_isWhiteTurn)
 		return (int)CodeType::CT_ENEMY_PAWN;
-	if (!piece->checkMoveRange(move.source, move.destination))
+	if (!piece->checkMoveRange(move.source, move.destination, *this))
 		return (int)CodeType::CT_ILLEGAL_MOVE;
 
 	Piece* destPiece = getPiece(move.destination);
@@ -81,20 +80,29 @@ int Board::validateAndPerformAction(const std::string& action)
 		return (int)CodeType::CT_LEGAL_MOVE;
 }
 
+
+
 Piece* Board::getPiece(indexPair index) const
 {
 	return m_Board[index.row][index.col].get();
 }
 
-void Board::boardDebug()const
-{
-	for (int i = 0; i < BOARD_SIZE; i++) {
-		for (int j = 0; j < BOARD_SIZE; j++) {
-			if (m_Board[i][j] == nullptr) std::cout << "# ";
-			if (m_Board[i][j] != nullptr) std::cout << "X ";
-		}
-		std::cout << "\n";
+bool Board::isPathClear(const indexPair& source, const indexPair& destination) const {
+	int rowDiff = destination.row - source.row;
+	int colDiff = destination.col - source.col;
+
+	int rowStep = rowDiff == 0 ? 0 : rowDiff / abs(rowDiff);
+	int colStep = colDiff == 0 ? 0 : colDiff / abs(colDiff);
+
+	int currRow = source.row + rowStep;
+	int currCol = source.col + colStep;
+
+	while (currRow != destination.row || currCol != destination.col) {
+		if (m_Board[currRow][currCol]) return false;
+		currRow += rowStep;
+		currCol += colStep;
 	}
+	return true;
 }
 
 void Board::movePiece(indexPair source, indexPair destination)
@@ -121,7 +129,7 @@ bool Board::isKingInCheck(bool isWhite) const
 			if (enemy && enemy->isWhite() != isWhite)
 			{
 				indexPair pos = { row, col };
-				if (enemy->checkMoveRange(pos, kingPos))
+				if (enemy->checkMoveRange(pos, kingPos, *this))
 					return true;
 			}
 		}
@@ -129,15 +137,14 @@ bool Board::isKingInCheck(bool isWhite) const
 	return false;
 }
 
-std::unique_ptr<Piece> Board::simulateMove(indexPair source, indexPair destination)
+std::unique_ptr<Piece> Board::simulateMove(const indexPair& source, const indexPair& destination)
 {
 	std::unique_ptr<Piece> captured = std::move(m_Board[destination.row][destination.col]);
 	m_Board[destination.row][destination.col] = std::move(m_Board[source.row][source.col]);
-	m_Board[source.row][source.col] = nullptr;
 	return captured;
 }
 
-void Board::undoMove(indexPair source, indexPair destination, std::unique_ptr<Piece>& capturedPiece)
+void Board::undoMove(const indexPair& source, const indexPair& destination, std::unique_ptr<Piece>& capturedPiece)
 {
 	m_Board[source.row][source.col] = std::move(m_Board[destination.row][destination.col]);
 	m_Board[destination.row][destination.col] = std::move(capturedPiece);
