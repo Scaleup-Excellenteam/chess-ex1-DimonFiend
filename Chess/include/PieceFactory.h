@@ -4,6 +4,13 @@
 #include <map>
 #include <memory>
 #include <functional>
+
+/*
+* File: PieceFactory.h
+* Description: Header file for the PieceFactory class, which is responsible for creating chess pieces.
+*			   It uses a static map to register and create pieces based on their names.
+*/
+
 class PieceFactory
 {
 public:
